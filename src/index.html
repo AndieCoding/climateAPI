@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meteocenter</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="icon" type="image/icon" href="./css/img/logo-nobg.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="login">
+    <header>
+    <nav>
+      <a href="#"
+        ><img class="logo" src="css/img/logo-nobg.png" alt="Virtual"
+      /></a>
+    </nav>
+  </header>
+
+    <p class="title">Averigua el clima</p>
+    <img class="sunSticker" src="css/img/sun.png" alt="sol" />
+
+    <main id="index">
+      <form id="login" class="login" action="">
+        <section class="login">
+          <label for="user">Usuario</label><br />
+          <input id="user" type="text" />
+        </section>
+        <section>
+          <label for="pass">Contraseña</label><br />
+          <input id="pass" type="password" oninput="showEyeIcon()" /><img
+            id="img-open-eye"
+            src="./css/img/open-eye.png"
+            onclick="showHide()"
+          /><img
+            id="img-close-eye"
+            src="./css/img/close-eye.png"
+            onclick="showHide()"
+          />
+          <div id="displayError"></div>
+        </section>
+
+        <button type="submit">Iniciar sesión</button>
+        <p>o si no tienes cuenta <a href="registro.html">Registrate</a></p>
+      </form>
+    </main>
+    <footer>
+      <p id="text">Todos los derechos reservados</p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

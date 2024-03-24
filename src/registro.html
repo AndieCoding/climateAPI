@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="icon" type="image/icon" href="./css/img/logo-nobg.png" />
+  </head>
+  <body id="registro">
+    <header>
+    <nav>
+      <a href="index.html"
+        ><img class="logo" src="css/img/logo-nobg.png" alt="Virtual"
+      /></a>
+    </nav>
+  </header>
+    <main class="registro">
+      <div class="registroEncabezado registroConSpan">
+        <div class="tituloySpan">
+          <h1>Registrate</h1>
+          <span>Es fácil</span>
+        </div>
+        <a href="./index.html"><span class="flecha">&#8617;</span></a>
+      </div>
+
+      <form id="registro" class="registro" action="" method="post">
+        <div class="divInline">
+          <section>
+            <label for="name">Nombre</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Nombre completo"
+              required
+            />
+          </section>
+          <section>
+            <label for="correo">Correo</label>
+            <input
+              id="correo"
+              name="correo"
+              type="text"
+              placeholder="su-email@ejemplo.com"
+              required
+            />
+          </section>
+        </div>
+        <div class="divInline">
+          <section>
+            <label for="select" class="labelSelect">País</label>
+            <br />
+            <select name="select" id="select" class="selectRegistro" required>
+              <option value="" selected>Selecciona tu país</option>
+            </select>
+          </section>
+          <section>
+            <label for="localidad">Localidad</label>
+            <input
+              id="localidad"
+              name="localidad"
+              type="text"
+              placeholder="Localidad donde vive"
+              required
+            />
+          </section>
+        </div>
+        <section>
+          <label for="user">Usuario</label>
+          <input
+            id="user"
+            name="user"
+            type="text"
+            placeholder="Su nombre de usuario"
+            required
+          />
+        </section>
+        <section class="registryPass">
+          <label for="pass">Contraseña</label>
+          <input id="pass" name="pass" type="password" required /><img
+            class="eye-icon"
+            id="img-open-eye"
+            src="./css/img/open-eye.png"
+          /><img
+            class="eye-icon"
+            id="img-close-eye"
+            src="./css/img/close-eye.png"
+          />
+        </section>
+        <div id="displayError"></div>
+        <button class="registro" type="submit">Registrarse</button>
+        <p>
+          <span class="textoRegistro">o si ya tienes cuenta </span
+          ><a href="index.html">Inicia sesión</a>
+        </p>
+        <div id="divErrorMsj"></div>
+      </form>
+    </main>
+
+    <footer>
+      <p id="text">Todos los derechos reservados</p>
+    </footer>
+
+    <script src="./js/registro.js" type="module"></script>
+  </body>
+</html>

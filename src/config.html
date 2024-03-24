@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configuración</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="icon" type="image/icon" href="./css/img/logo-nobg.png" />
+    
+  </head>
+  <body id="config">
+    <header>
+    <nav>
+      <a href="index.html"
+        ><img class="logo" src="css/img/logo-nobg.png" alt="Virtual"
+      /></a>
+      <ul>
+        <li class="liUserName">
+          <a href="#"
+            ><img class="userIcon" src="css/img/userIcon.png" />Ajustes
+            </a
+          >
+          <ul>
+            <a href="./clima.html"><li>Clima</li></a>            
+            <li><a id="logOff" href="">Salir</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+    <main class="registro">
+      <div class="registroEncabezado">
+        <h1>Configuración</h1>
+        <a href="./clima.html"><span class="flecha">&#8617;</span></a>
+      </div>
+
+      <form id="editar" class="registro" action="" method="post">
+        <div class="container">
+        <article>
+          <label>Nombre</label>
+          <p id="user"></p>
+          <img
+            id="editIcon_user"
+            src="./css/img/edit.png"
+            alt="Editar"
+            onclick="editar('user')"
+          />
+          <img
+            id="checkIcon_user"
+            class="checkIcon"
+            src="./css/img/check.png"
+            alt="Guardar"
+            onclick="guardar('user')"
+          />
+        </article>
+
+        <article class="imageSection">
+          <div class="previewImage"></div>
+          <input style="width: 90px;" type="file">
+          </article>
+
+        <article>
+          <label class="labelSelect">País</label>
+          <br />
+          <p id="pais"></p>
+          <img
+            id="editIcon_pais"
+            src="./css/img/edit.png"
+            alt="Editar"
+            onclick="editar('pais')"
+          />
+          <img
+            id="checkIcon_pais"
+            class="checkIcon"
+            src="./css/img/check.png"
+            alt="Guardar"
+            onclick="guardar('pais')"
+          />
+        </article>
+
+        
+      </div>
+      </section>
+        <div id="configLine" class="line"></div>
+
+        <section>
+          <label>Localidad</label>
+          <p id="localidad"></p>
+          <img
+            id="editIcon_localidad"
+            src="./css/img/edit.png"
+            alt="Editar"
+            onclick="editar('localidad')"
+          />
+          <img
+            id="checkIcon_localidad"
+            class="checkIcon"
+            src="./css/img/check.png"
+            alt="Guardar"
+            onclick="guardar('localidad')"
+          />
+        </section>
+        
+        <section>
+          <label>Correo</label>
+          <p id="correo"></p>
+          <img
+            id="editIcon_correo"
+            src="./css/img/edit.png"
+            alt="Editar"
+            onclick="editar('correo')"
+          />
+          <img
+            id="checkIcon_correo"
+            class="checkIcon"
+            src="./css/img/check.png"
+            alt="Guardar"
+            onclick="guardar('correo')"
+          />
+        </section>
+
+        <section class="sectionPass">
+          <label>Contraseña</label>
+          <p id="pass"></p>
+          <button id="editIcon_pass" type="button" onclick="editar('pass')">
+            Cambiar contraseña</button>
+          <img
+            id="checkIcon_pass"
+            class="checkIcon"
+            src="./css/img/check.png"
+            alt="Guardar"
+            onclick="guardar('pass')"
+          />
+        </section>
+        <div id="configLine" class="line"></div>
+        <section class="sectionAccDel ">
+          <a id="editIcon_acc" class="deleteAcc" onclick="editar('acc')">Eliminar cuenta</a>
+        </section>
+
+        <div id="confirmPass" class="emergente">
+          <span class="close" onclick="closeEmergente()">&times;</span>
+          <p>Ingresa tu contraseña para continuar:</p>
+          <div>
+          <input
+            type="password"
+            id="confirmInput"
+            oninput="showEyeIcon()"
+          /><img
+            class="eye-icon"
+            id="img-open-eye"
+            src="./css/img/open-eye.png"
+            onclick="showHide()"
+          /><img
+            class="eye-icon"
+            id="img-close-eye"
+            src="./css/img/close-eye.png"
+            onclick="showHide()"
+          />
+        </div>        
+          <button id="confirmButton" type="button">Confirmar</button>
+        </div>
+
+
+      </form>
+    </main>
+    <footer>
+      <p id="text">Todos los derechos reservados</p>
+    </footer>    
+    <script src="./js/config.js"></script>    
+  </body>
+</html>
